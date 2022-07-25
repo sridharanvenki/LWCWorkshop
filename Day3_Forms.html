@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Day 3 Forms</title>
+</head>
+<body>
+    <form>
+        Employee Id<br>
+        <input type="number" name="eid"/><br>
+        Employee Name<br>
+        <input type="Text" name="ename"/><br>
+        Email<br>
+        <!--id attribute used to identify in CSS/JS, name attribute is used for any server side scripting-->
+        <input type="Email" id="em" name="email"/><br> 
+        Password<br>
+        <input type="password" name="pword" minlength="5"/><br>
+        Comments <br>
+        <input type = "Textarea" name="comment"/><br>
+        Description <br>
+        <textarea rows="2" cols="10"></textarea>
+        <!--CheckBox-->
+        <p> How do you come to office?</p>
+        <input type="checkbox" id="cb1" name="cb1" value="Bike">
+        <label for="cb1"> By Bike</label><br>
+        <input type="checkbox" id="cb2" name="cb2" value="Car">
+        <label for="cb2"> By car</label><br>
+        <input type="checkbox" id="cb3" name="cb3" value="Public">
+        <label for="cb3"> By Public Transport</label><br>
+        <!--Radio Button-->
+        <p> Which Department?</p>    
+           <input type="radio" id="r1" name="rb" value="IT"/>
+           <label for="r1">IT</label><br>
+           <input type="radio" id="r2" name="rb" value="Non-IT"/>
+           <label for="r2">Non-IT</label><br>
+
+        <!--Button-->
+        <button type="button" onClick="alert('Submitted Successfully')">Submit</button>
+    </form>
+</body>
+</html>
