@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Day4 Task JavaScript</title>
+    </head>
+    <body>       
+        <!--Canvas - Used to display some graphical/picture representation in the form or doc-->
+        <p>CANVAS Tag</p>
+        <canvas id="canvasid" width="600" height="300" style="border:5px solid;color:blue;background:red">
+
+        </canvas>
+        <!--To have some design inside the canvas-->
+        <script>
+            var cvar = document.getElementById("canvasid");
+            var cvarContext = cvar.getContext("2d");
+            //cvarContext.addcolor("#3FFF33");
+            cvarContext.fillStyle = "green";    
+            //cvarContext.fillstyle="#3FFF33";
+            cvarContext.fillRect(150,100,300,100);
+        </script>
+    </body>
+</html>
