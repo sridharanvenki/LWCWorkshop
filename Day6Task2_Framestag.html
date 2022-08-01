@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            Frames tag
+        </title>
+    </head>     
+    <!--<body>-->
+        <!--To display a webpage in another web page-->
+       <!-- <iframe id="if1" src="Day2_Address.html" style="border:none"></iframe>
+        <iframe id="if2" src="Day3_List.html" style="border:none; height:100px"></iframe>
+        <iframe id="if3" src="Day4.html" style="border:none"></iframe>-->
+        
+    <!--</body>-->
+        <!--To have the correct height and width-->
+        
+        <frameset cols="25%,25%,25%">
+            
+            <frame name="left" src="Day2_Address.html"/>
+            <frame name="center" src="Day3_List.html"/>
+            <frame name="right" src="Day4.html" style="background-color: aqua;"/>
+            
+            <noframes>
+                <body><p>Your browser does not support frames</p></body>
+            </noframes>
+
+        </frameset>
+
+       
+</html>
