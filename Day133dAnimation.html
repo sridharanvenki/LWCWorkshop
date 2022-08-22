@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>3D Animation</title>
+        <style>
+            div{
+                height: 100px;
+                width: 100px;                
+                background-color: violet;  
+                border: 2px solid black;
+                transform: translate3d(50px, 50px, 50px);   
+                -ms-transform: translate3d(50px, 50px, 50px);           
+                -webkit-transform: translate3d(50px, 50px, 50px);
+            }
+            div.myrotate3d{
+                transform: translate3d(50px, 150px, 150px) rotate3d(1.0, 2.0, 3.0, 45deg);
+                -ms-transform: translate3d(50px, 150px, 150px) rotate3d(1.0, 2.0, 3.0, 45deg);
+                -webkit-transform: translate3d(50px, 150px, 150px) rotate3d(1.0, 2.0, 3.0, 45deg);
+            }
+            div.myskew3d{
+                transform: translate3d(100px, 250px, 150px) skew(20deg, 30deg);
+                -ms-transform: translate3d(100px, 250px, 150px) skew(20deg, 30deg);
+                -webkit-transform: translate3d(100px, 250px, 150px) skew(20deg, 30deg);
+            }
+            div.myscale3d{
+                transform: translate3d(250px, 300px, 250px) scale3d(1.5, 2.5, 3.5);
+                -ms-transform: translate3d(250px, 300px, 250px) scale3d(1.5, 2.5, 3.5);
+                -webkit-transform: translate3d(250px, 300px, 250px) scale3d(1.5, 2.5, 3.5);
+            }
+            div.mymatrix3d{
+                transform: translate3d(250px, 350px, 250px) matrix3d(10,0,0,0,0,2,0,0,0,0,4,0,0,0,0,5);
+                -ms-transform: translate3d(250px, 350px, 250px) matrix3d(10,0,0,0,0,2,0,0,0,0,4,0,0,0,0,5);
+                -webkit-transform: translate3d(250px, 350px, 250px) matrix3d(10,0,0,0,0,2,0,0,0,0,4,0,0,0,0,5);
+            }
+        </style>
+    </head>
+    <body>
+        <div> 3D Div Content</div>
+        <div class="myrotate3d"> Rotate3D Div Content</div>
+        <div class="myskew3d"> Skew3d Div Content</div>
+        <div class="myscale3d"> Scale3d Div Content</div>
+        <div class="mymatrix3d"> Matrix3d Div Content</div>
+    </body>
+</html>
