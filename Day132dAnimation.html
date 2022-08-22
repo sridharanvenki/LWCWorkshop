@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>2D Animation</title>
+        <style>
+            div{
+                height: 100px;
+                width:100px;
+                background-color: greenyellow;
+                border: 2px solid black;      
+                          
+                transform : translate(100px,50px); /* Standard */                              
+                -ms-transform: translate(100px,50px); /* IE Browser */
+                -webkit-transform: translate(100px,50px);/* Safari */
+                
+            }
+            div#myrotate{
+                transform: translate(100px,50px) rotate(45deg);
+                -ms-transform: translate(100px,50px) rotate(45deg);
+                -webkit-transform: translate(100px,50px) rotate(45deg);                
+            }
+            div.myskew{
+                transform: translate(100px,50px) skew(30deg, 20deg);
+                -ms-transform: translate(100px,50px) skew(30deg, 20deg);
+                -webkit-transform: translate(100px,50px) skew(30deg, 20deg);      
+            }
+            div.myscale{
+                transform: translate(100px,200px) scale(1,2);
+                -ms-transform: translate(100px,200px) scale(1,2);
+                -webkit-transform: translate(100px,200px) scale(1,2);  
+            }
+            div.myscaleX{
+                transform: translate(100px,300px) scaleX(3);
+                -ms-transform: translate(100px,300px) scaleX(3);
+                -webkit-transform: translate(300px,300px) scaleX(3);  
+            }
+            div.myscaleY{
+                transform: translate(100px,500px) scaleY(4);
+                -ms-transform: translate(100px,500px) scaleY(4);
+                -webkit-transform: translate(100px,500px) scaleY(4);  
+            }
+            div.mymatrix{
+                transform: translate(200px,500px) matrix(1.0, 2.0, 3.0, 4.0, 5.0, 6.0);
+                -ms-transform: translate(200px,500px) matrix(1.0, 2.0, 3.0, 4.0, 5.0, 6.0);
+                -webkit-transform: translate(200px,500px) matrix(1.0, 2.0, 3.0, 4.0, 5.0, 6.0);  
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="myrotate"> RotatecDiv Content </div>
+        <div class="myskew"> Skew Div Content </div>
+        <div class="myscale"> Scale Div Content </div>
+        <div class="myscaleX"> ScaleX Div Content </div>
+        <div class="myscaleY"> ScaleY Div Content </div>
+        <div class="mymatrix"> Matrix Div Content </div>
+    </body>
+</html>
