@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>ToolTipBottomRight</title>
+        <style>
+            .tooltip{
+                position:relative;
+                display: inline-block;
+                border-bottom: 10px solid blue;
+            }
+            .tooltip .tooltiptext{
+                visibility: hidden;
+                background-color: aliceblue;
+                color: red;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px 0;
+                position: absolute;
+                bottom:50%;
+                right:100%;
+                margin-left:-60px;
+            }
+            .tooltip:hover .tooltiptext{
+                visibility: visible;
+            }
+        </style>
+    </head>
+    <body style="text-align:center;">
+        <p> Move the mouse over </p>
+            <div class="tooltip"> Hover Top Left
+            <span class="tooltiptext">Help Text</span>
+            </div>
+    </body>
+</html>
