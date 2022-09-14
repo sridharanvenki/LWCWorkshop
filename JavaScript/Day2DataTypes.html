@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Data Types</title>
+    </head>
+    <body>
+        <script>
+            //Primitive Data Types - Number, BigInt, Boolean, String, Null and Undefined
+            let num = 1;
+            let str = "String with double quotes";
+            let str1 = "String with single quote";
+            let fname = 'DemandBlue';
+            //use trick symbol in expression to show the values with set bracket
+            //alert(`This is ${fname}`);
+
+            //suffix with n for BigInt - this is to hold number values more than 2^53-1 
+            let varBigInt = 123456789987654321n;
+            
+            //Boolean
+            let compare = 4>2;
+            //alert(compare);
+
+            //undefined
+            let result;
+           //alert(result);
+
+           let str2 = null;
+
+           let num2 = 1/0;
+
+           let str3 = NaN;
+
+            //typeof is used to identify the type of data type
+            alert(`Undefined Result is  ${typeof(result)}`);
+            alert(`Number is ${typeof(num)}`);
+            alert(`String with double quotes is ${typeof(str)}`);
+            alert(`String with single quote is ${typeof(str1)}`);
+            alert(`Boolean - ${typeof(compare)}`);
+            alert(`BigInt - ${typeof(varBigInt)}`);
+            //typeof Null will give as object, this is expected
+            alert(`Null - ${typeof(str2)}`);
+            alert(`Infinite - ${typeof(num2)}`);
+            alert(`NaN - ${typeof(str3)}`);
+
+
+
+        </script>
+        
+    </body>
+</html>

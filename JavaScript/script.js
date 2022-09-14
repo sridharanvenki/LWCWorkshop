@@ -1,0 +1,1 @@
+alert("Hello, alert message from External");
