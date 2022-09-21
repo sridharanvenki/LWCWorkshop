@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Day4Functions</title>
+    </head>
+    <body>
+        <script>
+            /*function saysHi(){
+                alert("Hi");
+            }
+            saysHi();
+
+            let greet = "Hi";
+            function sayHi(val){
+                let fname = prompt("Enter the Name");
+                alert(`${val} ${fname}`);
+            }
+            sayHi(greet);
+            function sayMsg(source,destination){
+                alert(source + destination);
+            }
+            sayMsg("Org","Employee");
+
+            //with default value
+            function sayMsg(source,destination="Employee"){
+                alert(source + "to" + destination);
+            }
+            sayMsg("Org");
+
+            //function as Values
+            function sayGrt(){
+                alert("Hi");
+            }
+            //alert(sayGrt);//shows entire function code
+            let res = sayGrt;
+            res();
+            sayGrt();
+
+            //Callbacks - passing function as parameter
+            function QA(Ques, Yes, No){
+                if(confirm(Ques)) Yes();
+                else No();
+            }
+
+            function showYes(){
+                alert("Yes");
+            }
+            function showNo(){
+                alert("No");
+            }
+            QA("Are you a Human",showYes,showNo);*/
+
+            //callbacks - alternate way with function body as parameter
+            function QA(Ques, Yes, No){
+                if(confirm(Ques)) Yes();
+                else No();
+            }
+               QA("Are you a Human",function() {alert("Yes")}, function() {alert("No")});
+
+
+        </script>
+    </body>
+</html>
