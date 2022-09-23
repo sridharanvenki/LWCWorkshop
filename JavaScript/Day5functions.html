@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>Day5 Functions</title>
+    </head>
+    <body>
+        <script>
+            /*
+            //function declaration
+            function sayHello(){
+                alert("Hello");
+            }
+            sayHello(); //function call
+
+            //function expression
+            let sayHello = function(){
+                alert("Hello");
+            }
+            sayHello();
+
+            //function as a values
+            function sayHello(){
+                alert("Hello");
+            }
+            let cvHello = sayHello();
+            cvHello();
+
+            //Callback functions
+
+            function QA(Ques, Yes, No){
+                if(confirm(Ques)) Yes();
+                else No();
+            }    
+            function showYes(){
+                alert("Yes");
+            }
+            function showNo(){
+                alert("No");
+            }                       
+            QA("Are you a Human",showYes, showNo);
+
+            //functions can be called before defined
+            sayHello("DB");
+            function sayHello(name){
+                alert(`Hello ${name}`);
+            }
+
+            //in expression functions cannot be called before defined
+            sayHello1("DB");
+            let say = function(name){
+                alert(`Hello ${name}`);                
+            }
+
+
+            let dept = prompt("Enter BU");
+            if(dept == "HR"){
+                function saydept(){
+                    alert("Hello HR")
+                }
+            }
+            else{
+                function saydept(){
+                    alert("Hello Others")
+                }
+            }
+            saydept();
+
+            'use strict';
+            //const x = 21;
+            let age = prompt("Age for eligibility", 21);
+            if(age < 21){
+                function elg(){
+                    alert("Not eligible");
+                }
+            }
+            else {
+                function elg(){
+                    alert("Eligible");
+                }
+            }
+            elg();
+
+            //In modern javascript (with use strict) if any condition go with function expression
+            //Generally go for function definition else go for function expression
+            //use strict can be restricted within the script tags or div tags
+            //use strict is used to arrest the logical errors in the modern javascript
+
+            "use strict";
+
+            let age1 = prompt("Age for eligibility",21);
+            let elg;
+            if(age1 < 21){
+                elg = function(){
+                    alert("Not eligible");
+                }
+            }
+            else {
+                elg = function(){
+                    alert("Eligible");
+                }
+            }
+            elg();
+            //Arrow functions - Simplifies the code
+            function sum(a,b){
+                s=a+b;
+                alert(s);
+            }
+            //above code can be simplified using arrow fn
+            let sum1 = (a,b) => a+b;
+            alert(sum1(1,2));
+
+            let agex = prompt("Enter the age");
+            let greetx = (agex > 21) ? () => alert("Eligible") : () => alert("Not eligible");
+            greetx();
+            */
+            function QA2(Ques, Yes, No){
+                if(confirm(Ques)) Yes()
+                else No()
+            }
+            QA2("Do you agree with Arrow function?", () => {alert("Agreed")}, () => {alert("Not agreed")});
+
+        </script>
+    </body>
+</html>
