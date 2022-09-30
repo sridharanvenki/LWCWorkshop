@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Day8objectThis</title>
+    </head>
+    <body>
+        <script>
+            //this - refers current object
+            /*let emp = {
+                Empname: "Alex",
+                EmployerName:"DemandBlue",
+
+                sayHi(){
+                    alert(this.EmployerName);
+                }
+
+                };
+
+                emp.sayHi();
+
+                let emp1 = {
+                    Empname: "Alex",
+                    EmployerName:"DemandBlue",
+
+                    sayHi(){
+                        alert(emp1.EmployerName);
+                    }
+
+                    };
+                    emp1.sayHi();
+
+                    let toys = {
+                        name: "Teddy Bear",
+                        color: "White"
+                    }
+
+                    let books = {
+                        name: "Comics",
+                        Type: "Fiction"
+                    }
+
+                    function combine(){
+                        alert(toys.name);
+                        alert(books.name);
+                    }
+                    combine();
+                    */
+                    //Easiest way to display
+                    let toys1 = {
+                        name: "Teddy Bear",
+                        color: "White"
+                    }
+
+                    let books1 = {
+                        name: "Comics",
+                        Type: "Fiction"
+                    }
+
+                    function combine1(){
+                     alert(this.name);
+                     alert(this.color);
+                     alert(this.Type);
+                    }
+                    toys1.display = combine1;
+                    books1.display = combine1;
+
+                    toys1.display();
+                    books1.display();
+                    
+        </script>
+    </body>
+</html>

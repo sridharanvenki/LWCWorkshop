@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Day8Objects</title>
+    </head>
+    <body>
+        <script>
+            //Copy by reference
+            /*let user = {
+                user: "Demandblue"
+            };
+            let admin = user;
+            admin.name = "Preludesys";
+            alert(user.name);//Preludesys
+
+            //if admin.name is not assigned 
+            alert(admin.name); //Demandblue
+
+            //To verify
+            alert(user == admin);//true
+            alert(user === admin);//true
+            
+
+            //Clone the object - Iterate over its property and copy them
+            
+            let user = {
+                name: "Demand Blue",
+                age: 30
+            };
+            let clone = {};
+            //copy all user properties
+            for(let key in user){
+                clone[key] = user[key];
+            }
+            clone.name = "Sri";
+            alert(user.name);*/
+
+            //Merge the objects - use object.assign
+            let user = {
+                name:"Admin"
+            };
+            let permissionset1 = { canView : true};
+            let permissionset2 = { canEdit : true};
+
+            object.assign(user,permissionset1,permissionset2);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Day8Constructor</title>
+    </head>
+    <body>
+        <script>
+            //Constructor starts with first letter capital
+            //execute only with New 
+
+            //a new empty object is created and assigned to this
+            //function body executes modifies the property with this
+            //value of this is returned
+            /*function User(Empname){
+                this.empName = empName;
+                this.isActive = true;
+            }
+
+            let user = new User("Sun");
+            alert(user.empName);
+            alert(user.isActive);*/
+
+            function WEPlan(){
+                this.movie = "RRR";
+                //return takes priority over property in function
+                return{movie: "PS1", location: "IN"}; //to return more than one property
+            }
+
+            alert(new WEPlan().movie); //PS1
+            alert(new WEPlan().location);
+
+        </script>
+    </body>
+</html>

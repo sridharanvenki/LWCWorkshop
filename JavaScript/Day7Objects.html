@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Day7Objects</title>
+    </head>
+    <body>
+        <script>
+
+            let userDetails = {
+                name: "ABC",
+                address: "IN"
+            }
+            alert(userDetails.name);
+            //to add new property to the object
+            userDetails.mobile="0099887766";
+            alert(userDetails.mobile);
+            //to delete property from the object
+            delete userDetails.address;
+
+            alert(userDetails);
+
+            //to check whether some property in exists or not
+            alert("address" in userDetails);//false
+            alert("mobile" in userDetails);//true
+
+            //to display what are the keys are there
+            /*for(let key in userDetails){
+                alert(key);
+                //values of the key
+                alert(userDetails[key]);
+            }*/
+            let usr = object.key(userDetails).length;
+            alert("usr:"+object.key(userDetails).length);
+
+            //to check whether the object is empty or not
+            function isEmpty(obj){
+                for(let key in userDetails){
+                    //if(){
+                        return false;
+                    //}
+                    //return true;
+                }
+                return true;
+            }
+            isEmpty(userDetails);
+        </script>
+
+    </body>
+</html>
