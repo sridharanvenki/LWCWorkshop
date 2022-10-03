@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Day9 Option Chaining</title>
+    </head>
+    <body>
+        <script>
+            //?. "Non-Existing property"
+            //works like if value.property if value exists
+            //otherwise retuned undefined (if the value is undefined or null)
+            let details = {}; //empty object
+            alert(details?.address?.street?.zipcode);//undefined
+
+            let id = Symbol("id");
+            let details1 = {
+                name : "DemandBlue",
+                address: "CA",
+                [id] :123
+            };
+            for(let key in details1) alert(key);
+            alert("Direct Access"+ details1[id]);
+
+        </script>
+    </body>
+</html>
