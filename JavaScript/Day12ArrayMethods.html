@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Day12 ArrayMethods</title>
+    </head>
+    <body>
+        <script>
+            /*let arr = ["A","B","C"];
+            //delete - removes the value alone
+            delete arr[1];
+            alert(arr); //A,,C
+            alert(arr[1]);//undefined
+            alert(arr.length());//3
+
+            //splice(index pos, no of elements to remove) //used to remove the value with its position
+            arr.splice(1,1);
+            alert(arr); //A,C
+            alert(arr.length());//2
+
+            let arr1 = ["A","B","C"];
+            alert(arr1);
+            arr1.splice(1,2,"E"); //removes 2 element from index 1 and replace with E
+            alert(arr1);
+
+            let arr2 = ["A","B","C"];
+            alert(arr2);
+            arr2.splice(-2,0,1,2);//A,1,2,B,C 
+            alert(arr2);*/
+            
+            //slice
+            /*let arr3 = [1,2,3,4,5];
+            alert(arr3.slice(1,4));//from index 1 removed till the 3 positions
+            alert("arr3:"+arr3);
+
+            let arrr3 = ["A","B","C","D","E"];
+            alert(arrr3.slice(1,4));//from index 1 removed till the 3 positions
+            alert("arrr3:"+arrr3);
+
+            //concat
+            let arr4 = [1,2];
+            arr4.concat([3,4]);
+            alert("arr4:"+arr4); //1,2,3,4
+
+            //forEach
+            let arr5 = [1,2,3,4,5];
+            arr5.forEach((item,index,array) =>
+            {
+                alert(`${item} is at ${index} index in ${array}`);
+            })*/
+            
+            //index of  
+            let ar1 = ["A","B","C","A"];
+            alert(ar1);
+            alert(ar1.indexof("B"));
+            alert(ar1.includes("C")); //checks whether C is present or not
+            alert(ar1.indexof("A")); //takes the first occurrence
+            alert(ar1.lastindexof("A"));//takes the last occurrence
+            
+            //find,findindex and findLastIndex
+            /*let ar2 = [
+            {id:1,org:"PreludeSys"},
+            {id:2,org:"Demand Blue"},
+            {id:3,org:"Demand Dynamics"}
+            ];
+
+            let i = ar2.find(item => item.id==1);
+            alert(i.org);
+
+            alert(ar2.findIndex(user => user.org == 'Demand Blue'));*/
+
+        </script>
+    </body>
+</html>

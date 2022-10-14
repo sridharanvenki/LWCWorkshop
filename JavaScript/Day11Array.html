@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Day11Array</title>
+    </head>
+    <body>
+        <script>
+            //array
+            /*alert("Test");
+            let arraywithNew = new Array();
+            let arrayEmpty = [];
+            let details = ["EId","EName","Age"];
+            alert(details[0]); //EId
+            //replacing element
+            details[2] = "DOB";
+            alert(details[2]); //Age replaced with DOB
+            //adding the element
+            details[3] = "Address";
+            alert(details[3]);
+            //length of the array
+            alert(details.length); //4
+
+            let mixofval = ["ID",{ fname: "Sri"}, false, function() {alert("Hello")}];
+            /*alert(mixofval[0]);
+            //get the object at index 1
+            alert(mixofval[1].fname);
+            //get the function value
+            mixofval[3]();           
+            alert(mixofval[2]);
+
+
+            let cars = ["Audi","Benz","Kia"];
+            //negative indexing - last element
+            alert(cars[cars.length-1]); //Kia
+            //cars[-1] won't work, it will give undefined
+
+            //use at - to access particular element
+            alert(cars.at(-1)); //Kia
+
+            //Queues - FIFO (Shift and Unshift)
+            //PUSH
+            //SHIFT
+            //STACK - LIFO (Push and Pop)
+            //push
+            //pop
+            
+            //removes element from the end - Stack
+            alert(cars.pop());
+            alert(cars);
+            
+            //adds element into the end - Stack
+            alert(cars.push("Citreon"));
+            alert(cars);
+
+            //removes element from the front - Queue
+            alert(cars.shift());
+            alert(cars);
+
+            //adds element into the front - Queue
+            cars.unshift("Datsun");
+            alert(cars);
+        
+
+            //Internals
+            let vehicle = cars; //copy by reference
+            cars.push("Ferrari");
+            alert(vehicle);
+
+            //to print each item
+            for(let i=0; i<cars.length; i++){
+                alert("cars[i]:"+cars[i]);
+            }
+            //another way to print each element
+            for(let car of cars){
+                alert("car:"+car);
+            }
+            //another way
+            for(let key in cars){
+                alert("cars[key]:"+cars[key]);
+            }*/
+
+            let alphabets = ["A","C"];
+            alert("Initial:"+alphabets);
+            alphabets[2] = "D";
+            alert("D appended:"+alphabets);
+            alert("Middle:"+alphabets[Math.floor((alphabets.length-1)/2)]);
+            //alphabets[Math.floor((alphabets.length-1)/2)] = "B"; 
+            //alert("added B:"+alphabets); //A,B,D
+            alphabets.splice([Math.floor((alphabets.length-1)/2)],0,"B"); //A,B,C,D           
+            alert("added B:"+alphabets); //A,B,C,D
+            alert("Strip off:"+alphabets.shift());
+            alphabets.unshift("0","1");
+            alert("Final:"+alphabets);
+
+        </script>
+    </body>
+</html>
