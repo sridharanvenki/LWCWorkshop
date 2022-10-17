@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Day13MapSet</title>
+    </head>
+    <body>
+        <script>
+            //Here Map is different from array method map
+            //it allows key of any type
+            /*let sampleMap = new Map();
+            sampleMap.set(1,"Numeric1");//numeric key
+            sampleMap.set("1","Strings1");//string key
+            sampleMap.set(true,"Boolean1");//boolean key
+
+            
+            alert(sampleMap.get(1)); //Numeric1
+            alert(sampleMap.get("1"));//Strings1
+            alert(sampleMap.get(true));//Boolean1
+            alert(sampleMap.size);//3
+
+
+            let visit1 = {name: "ABC"};
+            let visitcount = new Map();
+            visitcount.set(visit1,1);//{name: "ABC"} is a key and the value is 1
+            alert(visitcount.get(visit1));// 1 */
+
+
+            let sports = new Map([['Bat',75],['Ball',100],['PairGlouse',50]]);
+
+            //iterate over keys
+            for(let sportitem of sports.keys()){
+                alert(sportitem);
+            }
+           //iterate over values
+            for(let sportitem1 of sports.values()){
+                 alert(sportitem1);
+            }
+            //iterate over key value pair
+            for(let sportitem2 of sports){
+                alert(sportitem2);
+            }
+
+        </script>
+    </body>
+</html>

@@ -48,12 +48,12 @@
             })*/
             
             //index of  
-            let ar1 = ["A","B","C","A"];
+            /*let ar1 = ["A","B","C","A"];
             alert(ar1);
             alert(ar1.indexof("B"));
             alert(ar1.includes("C")); //checks whether C is present or not
             alert(ar1.indexof("A")); //takes the first occurrence
-            alert(ar1.lastindexof("A"));//takes the last occurrence
+            alert(ar1.lastindexof("A"));//takes the last occurrence*/
             
             //find,findindex and findLastIndex
             /*let ar2 = [
@@ -65,7 +65,51 @@
             let i = ar2.find(item => item.id==1);
             alert(i.org);
 
-            alert(ar2.findIndex(user => user.org == 'Demand Blue'));*/
+            alert(ar2.findIndex(user => user.org == 'Demand Blue'));
+            
+            //sort and reverse
+            let fruits = ["Banana","Orange","Apple","Guava"];
+            alert("sort:"+fruits.sort());
+            alert("Reverse:"+fruits.reverse());
+            
+            //For numeric sort, we go with below function to avoid confusion
+            function comp(a,b){
+               if(a>b) return 1;
+               if(a==b) return 0;
+               if(a<b) return -1;
+               
+            }
+            /*let ar3 = [1,2,10];
+            ar3.sort(comp);
+            alert(ar3);
+
+            let arr4 = [20,1,13];
+            arr4.sort(comp);
+            alert(arr4);
+
+            //map
+            //used to run through each element from an array into a function and return as the array
+            //syntax - function(item, index, array)
+            /*let ar2 = ["A","123456","City"].map(item => item.length);
+            alert(ar2);
+
+            //Split and Join
+
+            let names = "Sri,Venkat,Ramanan";
+            let arr5 = names.split(",");
+            for(let name of arr5 ){
+                alert(`My name is ${name}`);
+            }
+
+            let arr6 = ["Demand", "Blue"];
+            let res = arr6.join("::");
+            alert(res);*/
+
+            //Reduce - Used to run through each element from an array into a function and returns the single value
+            //syntax - accumulator, item, index and array
+            let ar8 = [1,3,4,5,7,8];
+            let res = ar8.reduce((sum, current) => sum + current, 0);
+            alert(res);
 
         </script>
     </body>
