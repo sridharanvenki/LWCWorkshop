@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Day15Json</title>
+    </head>
+    <body>
+        <script>
+            /*let det = {
+                name: "Demand",
+                addr:"IN",
+                toString(){
+                    return `{name: "${this.name}", addr: "${this.addr}"}`;
+                }
+            }
+            alert(det);
+
+            let student = {
+                Id: "1234",
+                Name: "Akash",
+                DayScholar: "true",
+                LanguagesKnown: ["Tamil", "English"],
+                Gender:null
+            }
+
+            let jsonStr = JSON.stringify(student);
+            alert(jsonStr);
+            alert(typeof jsonStr);*/
+
+            //stringify only with primitive and it will ignore functions, symbols, undefined
+
+            let student1 = {
+                say(){
+                    alert("Hi");
+                },
+                [Symbol("Id")]: "1234",
+                Name: undefined,
+            }
+
+            let jsonStr1 = JSON.stringify(student1);
+            alert(jsonStr1);
+            alert(typeof jsonStr1);
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Day14Set</title>
+    </head>
+    <body>
+        <script>
+            let exSet = new Set(); //to check the uniqueness
+            let name1 = {name: "DB"};
+            let name2 = {name: "AC"};
+            let name3 = {name: "CA"};
+
+            exSet.add(name1);
+            exSet.add(name2);
+            exSet.add(name3);
+
+            alert(exSet.size);
+
+            for(let usr of exSet){
+                alert(usr.name);
+            }
+
+
+
+        </script>
+    </body>
+</html>

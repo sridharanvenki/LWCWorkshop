@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Day14WeakMap</title>
+    </head>
+    <body>
+        <script>
+            let wm = new WeakMap();
+            let obj = {};
+
+            wm.set(obj,"OK");
+            //error on next line, coz it accepts only object as key
+            wm.set("Test","OK");
+
+
+            let name1 = {name:"A"};
+            let wm1 = new wm1();
+            wm1.set(name1,".....");
+            wm1 = null //overwrite the reference
+            //it removes the associated value too 
+
+        </script>
+    </body>
+</html>

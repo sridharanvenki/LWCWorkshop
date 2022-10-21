@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            Day15SetTimeOut
+        </title>
+        <body>
+            <script>
+                /*function sayHi(){
+                    alert("Hi");
+                }
+                setTimeout(sayHi,5000); //5second = 5000ms
+                setTimeout(() => alert("Hello",7000));
+
+                //want to cancel the delay
+                let timer = setTimeout(() => alert("Hello",10000));
+                clearTimeout(timer);*/
+
+                let hello = setInterval(()=>alert("Hello"),2000)
+                setTimeout(() => {clearInterval(Hello);alert("Stopped")},10000);
+
+            </script>
+        </body>
+    </head>
+</html>

@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Day14Destructuring</title>
+    </head>
+    <body>
+        <script>
+            /*let fruits = ["Apple","Banana","Grapes"];
+            let [f1,f2,f3] = fruits;
+            alert(f1);
+            alert(f2);
+            alert(f3);
+            alert(fruits); this array will not get deleted, its just destructuring
+            
+
+            let [fn,ln] = "A X".split(' ');
+            alert(fn);
+            alert(ln);
+
+            let [fn,ln, , addr] = ["A","B","Oct","Chennai"];
+            alert(addr);  
+
+            let det = {};
+            [det.name, det.addr] = "DB Chennai".split(' ');
+            alert(det.name);
+            alert(det.addr);
+
+            let details = {name: "DB",city:"Chennai"};
+            for(let[key,value] of Object.entries(details)){
+                alert(`${key}:${value}`);
+            }
+            
+            let [n1,n2,...name]=["Preludes","DeBlue","DeDynamics","Chennai"];
+            alert(name[0]);
+            alert(name[1]);
+            alert(name.length());
+            
+            let [n1="Preludes",Loc="Chennai"] = ["DemandBlue"];
+            alert(n1);
+            alert(Loc);
+            
+
+            let [fn,ln, ,addr] = ["A","B","Oct","Chennai"];
+            alert(addr);  
+            alert(fn);
+            alert(ln);     
+
+
+            let obj = {fname:"Sri",lname:"V",comp:"DemandBlue"};
+            alert(obj.fname);
+            alert(obj.lname);
+            alert(obj.comp);
+            let {fname:fn,lname:ln,comp:c} = obj; //one way of destructuring
+            let {fname,lname,comp} = obj; //another way
+
+
+            let obj1 = {firstname:"Sri",lastname:"V"};
+            let {firstname, lastname, company="DB"} = obj1;
+            alert(lastname);*/  
+
+            let obj2 = {firstname:"Sri",lastname:"V"};
+            let {firstname, ...rest} = obj2;
+            alert(rest.lastname);
+
+            //destructure the object functions
+
+            
+
+        </script>
+    </body>
+</html>
