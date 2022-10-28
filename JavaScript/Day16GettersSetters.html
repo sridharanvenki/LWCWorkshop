@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Day16GettersSetters</title>
+    </head>
+    <body>
+        <script>
+            let users = {
+                name: "Sri",
+                loc:"Chennai",
+            
+            get details(){
+                return `${this.name} ${this.loc}`
+            },
+            set details(value){
+                [this.name, this.loc] = value.split(" ");                
+                let varname = this.name;
+                if(varname.length < 5){
+                    alert("Its the short name");
+                }
+                else{                  
+                    varname = this.name;
+                    alert(varname);
+
+                }
+            }
+        }  
+        users.details = "Sri Delhi";
+        users.details = "Venkat Delhi";
+        //alert(users.name);
+        //alert(users.loc);
+
+        </script> 
+    </body>
+</html>

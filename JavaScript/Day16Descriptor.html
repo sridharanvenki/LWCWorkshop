@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Day16Descriptor</title>
+</head>
+<body>
+    <script>
+        /*let sampleObj = {
+            name: "DemandBlue"
+        }
+
+        let descriptor = Object.getOwnPropertyDescriptor(sampleObj, 'name');
+        alert(JSON.stringify(descriptor));*/
+
+        let sampleObj1 = {};
+        let details = Object.defineProperty(sampleObj1, 'name', {
+            value: "PreludeSys",
+            writable: false,
+            enumerable: false,
+            configurable: false
+        }     
+        );
+        let descriptor1 = Object.getOwnPropertyDescriptor(sampleObj1, 'name');
+        alert(JSON.stringify(descriptor1));
+
+
+    </script>
+</body>
+</html>
